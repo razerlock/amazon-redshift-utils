@@ -13,7 +13,8 @@ CREATE TABLE IF NOT EXISTS history.hist_stl_query (
   "starttime" TIMESTAMP WITHOUT TIME ZONE NOT NULL  ENCODE lzo,
   "endtime" TIMESTAMP WITHOUT TIME ZONE NOT NULL  ENCODE lzo,
   "aborted" INTEGER NOT NULL  ENCODE lzo,
-  "insert_pristine" INTEGER NOT NULL  ENCODE lzo
+  "insert_pristine" INTEGER NOT NULL  ENCODE lzo,
+  "concurrency_scaling_status" INTEGER NOT NULL  ENCODE lzo
 );
 
 CREATE TABLE IF NOT EXISTS history.hist_stl_wlm_query (LIKE stl_wlm_query);
